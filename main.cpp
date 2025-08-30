@@ -1,3 +1,5 @@
+#include "userdatamanager.h"
+
 #include <QApplication>
 #include <QSystemTrayIcon>
 #include <QMenu>
@@ -6,6 +8,7 @@
 int main(int argc, char *argv[])
 {
     QApplication app(argc, argv);
+    UserDataManager::instance().initialize();
 
     if (!QSystemTrayIcon::isSystemTrayAvailable())
         return 1;

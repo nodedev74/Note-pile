@@ -1,0 +1,14 @@
+{
+	"head": {
+		"title": "test",
+		"tags": [],
+		"style": 0
+	},
+
+	"body": {
+		"attachments": [
+			{ "name": "test", "file": "test.abc" }
+		],
+		"content": "test"
+	}
+}
