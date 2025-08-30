@@ -13,7 +13,7 @@ find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Widgets)
 find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets)
 
 set(PROJECT_SOURCES
-        main.cpp
+        source/main.cpp
 
 
 
@@ -27,9 +27,9 @@ find_package(Qt6 REQUIRED COMPONENTS Core)
     qt_add_executable(Note-pile
         MANUAL_FINALIZATION
         ${PROJECT_SOURCES}
-        notemanager.h notemanager.cpp
-        note.h note.cpp
-        userdatamanager.h userdatamanager.cpp
+        source/notemanager.h source/notemanager.cpp
+        source/note.h source/note.cpp
+        source/userdatamanager.h source/userdatamanager.cpp
     )
 # Define target properties for Android with Qt 6 as:
 #    set_property(TARGET Note-pile APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR
