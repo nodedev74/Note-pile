@@ -26,6 +26,10 @@ public:
 
     QString appDataPath() const { return m_appDataPath; }
 
+    QString notesFilePath() const { return m_appDataPath + "/profiles/" + active_profile.uuid + "/notes"; }
+    QString attachmentFilePath() const { return m_appDataPath + "/profiles/" + active_profile.uuid + "/attachments"; }
+    QString boardFilePath() const { return m_appDataPath + "/profiles/" + active_profile.uuid + "/boards"; }
+
     void initialize();
 
 public:

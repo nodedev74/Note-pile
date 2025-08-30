@@ -19,6 +19,21 @@ UserDataManager& UserDataManager::instance() {
     return inst;
 }
 
+QString UserDataManager::notesFilePath() const
+{
+    return m_appDataPath + "/profiles/" + active_profile.uuid + "/notes";
+}
+
+QString UserDataManager::attachmentFilePath() const
+{
+    return m_appDataPath + "/profiles/" + active_profile.uuid + "/attachments";
+}
+
+QString UserDataManager::boardFilePath() const
+{
+    return m_appDataPath + "/profiles/" + active_profile.uuid + "/boards";
+}
+
 QJsonValue UserDataManager::getGlobalSettingValue(const QString& key)
 {
     QString settingsPath = m_appDataPath + "/settings.json";
