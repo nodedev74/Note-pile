@@ -6,10 +6,18 @@
 class NoteManager : public QObject
 {
     Q_OBJECT
-public:
+
+private:
     explicit NoteManager(QObject *parent = nullptr);
 
+public:  
+    static NoteManager& instance();
+
 signals:
+    void noteDeleted();
+    void noteChanged();
+    void noteCreated();
+
 };
 
 #endif // NOTEMANAGER_H

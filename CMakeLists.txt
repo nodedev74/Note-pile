@@ -30,6 +30,7 @@ find_package(Qt6 REQUIRED COMPONENTS Core)
         source/notemanager.h source/notemanager.cpp
         source/note.h source/note.cpp
         source/userdatamanager.h source/userdatamanager.cpp
+        source/ui/notewindow.h source/ui/notewindow.cpp source/ui/notewindow.ui
     )
 # Define target properties for Android with Qt 6 as:
 #    set_property(TARGET Note-pile APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR
